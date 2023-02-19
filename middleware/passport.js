@@ -1,8 +1,8 @@
-const {Users, userSchema} = require("../model/userSchema");
+const {userModel} = require("../model/userModel");
 const {mongoose, passportLocalMongoose} = require("../utils/packages");
 
-userSchema.plugin(passportLocalMongoose);
-const User = mongoose.model("Users", userSchema);
+userModel.plugin(passportLocalMongoose);
+const User = mongoose.model("user", userModel);
 function passportConfig(passport){
 //Create Passport Strategy 
 passport.use(User.createStrategy());
