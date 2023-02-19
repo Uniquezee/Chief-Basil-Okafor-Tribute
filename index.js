@@ -3,10 +3,11 @@ const app = express();
 const port = 8000;
 const myRoutes = require("./routes");
 const connectDB = require("./db/connect")
+const middleware = require("./middleware");
 require("dotenv").config();
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.static("Public"))
+middleware(app);
+
 app.use(myRoutes);
 
 

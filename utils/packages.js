@@ -1,3 +1,4 @@
+const express = require('express');
 const Router = require("express").Router();
 const enVariables = require("dotenv");
 const mongoose = require('mongoose');
@@ -8,6 +9,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 
 
 module.exports = {
+  express,
   Router,
   enVariables,
   mongoose,
