@@ -1,10 +1,10 @@
-const {mongoose} = require("./utils/packages");
+const {mongoose} = require("../utils/packages");
 
 const tributeModel = new mongoose.Schema({
   username: String,
   tributeTitle: String,
   tribute: String,
-  status: Boolean,
+  pending: Boolean,
 })
 
 const tribute = mongoose.model("tribute", tributeModel);
