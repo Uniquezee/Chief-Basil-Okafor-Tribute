@@ -18,6 +18,7 @@ Router.post("/admin/login", login);
 Router.post("/create/tribute", addTribute);
 Router.post("/ticket/approve", approveTribute);
 Router.post("/ticket/delete", deleteTribute);
+Router.post("/logout", logout);
 
 
 
