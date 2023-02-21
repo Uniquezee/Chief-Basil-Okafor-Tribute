@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.success-wrapper,
+.login-wrapper{
+  background-color: #eee;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.success-wrapper .success-box,
+.login-wrapper .login-box{
+  background-color: #fff;
+  max-width: 500px;
+  width: 93%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.success-wrapper .success-box h1{
+  color: #111180;
+}
+.success-wrapper .success-box p{
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 590;
+}
+.success-wrapper .success-box a{
+  padding: 10px 15px;
+  background-color: #111180;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.btn{
+  padding: 10px 15px;
+  background-color: #111180;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.login-box form{
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  width: 90%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.login-box form .login-head{
+  width: 100%;
+  text-align: center;
+}
+.login-box form  .input-box{
+  width: 100%;
+}
+.login-box form  .input-box .form-con{
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+  border: 1px solid #c7c7c7;
+  padding-left: 8px;
+  outline: none;
+}
+.login-box form  .input-box .form-con:focus{
+  outline: 2px solid #111180;
+}
+@media screen and (max-width: 384px) {
+  .login-box form .login-head h1{
+    font-size: 1.4rem;
+  }
+}
