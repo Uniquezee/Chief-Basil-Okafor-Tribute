@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dashboard | Admin</title>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+      <div class="humburger">
+        <i class="fa fa-bars"></i>
+      </div>
+      <main class="con">
+
+        <aside>
+          <div class="tri-up">
+            <a href="" class="active"><i class="fa fa-hourglass-end"></i>Pending Tribute</a>
+          <a href=""><i class="fa fa-thumbs-up"></i>Aproved Tribute</a>
+          </div>
+          <div class="log-out">
+            <a href="/">Logout</a>
+          </div>
+        </aside>
+        <section>
+          <!-- Tribute Items Start -->
+          <div class="tribute-box">
+            <h2>Good Man</h2>
+            <p>
+              the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            <span>Obinna Nwachukwu</span></p>
+            <div class="btns">
+              <button type="submit" class="btn delete">Delete</button>
+              <button type="submit" class="btn">Approve</button>
+            </div>
+          </div>
+          <div class="tribute-box">
+            <h2>Good Man</h2>
+            <p>
+              the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            <span>Obinna Nwachukwu</span></p>
+            <div class="btns">
+              <button type="submit" class="btn delete">Delete</button>
+              <button type="submit" class="btn">Approve</button>
+            </div>
+          </div>
+
+          <div class="tribute-box">
+            <h2>Good Man</h2>
+            <p>
+              the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            <span>Obinna Nwachukwu</span></p>
+            <div class="btns">
+              <button type="submit" class="btn delete">Delete</button>
+              <button type="submit" class="btn">Approve</button>
+            </div>
+          </div>
+          <div class="tribute-box">
+            <h2>Good Man</h2>
+            <p>
+              the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            <span>Obinna Nwachukwu</span></p>
+            <div class="btns">
+              <button type="submit" class="btn delete">Delete</button>
+              <button type="submit" class="btn">Approve</button>
+            </div>
+          </div>
+          <div class="tribute-box">
+            <h2>Good Man</h2>
+            <p>
+              the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+            <span>Obinna Nwachukwu</span></p>
+            <div class="btns">
+              <button type="submit" class="btn delete">Delete</button>
+              <button type="submit" class="btn">Approve</button>
+            </div>
+          </div>
+          <!-- Tribute Items End -->
+        </section>
+      </main>
+    </div>
+    <script>
+      let ham = document.querySelector(".fa-bars");
+      let sideBar = document.querySelector("aside");
+      let sideBar2 = document.querySelector("aside.show");
+
+      function toggleSideBar(){
+        ham.addEventListener("click", function(){
+        sideBar.classList.add("show")
+      })
+      }
+      toggleSideBar()
+      window.addEventListener("click", (e)=>{
+        if(e.target != sideBar && e.target != ham){
+          console.log("It's not the side bar")
+          sideBar.classList.remove("show")
+          sideBar.classList.add("close")
+        }else{
+          sideBar.classList.remove("close")
+          sideBar.classList.add("show")
+        }
+      })
+    </script>
+</body>
+</html>

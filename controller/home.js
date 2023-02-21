@@ -5,7 +5,7 @@ const Home = (req, res, next) => {
     console.log(tributes);
     console.log("Checkkkkkk")
     console.log(err);
-    res.render("adminDashboard")
+    res.render("adminApproveDashboard")
     
   })
 

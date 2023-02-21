@@ -85,6 +85,14 @@
   display: grid;
   place-items: center start;
 }
+.dashboard-wrapper .humburger{
+  width: 90%;
+  padding: 0 2rem;
+}
+.dashboard-wrapper .humburger .fa{
+  font-size: 1.8rem;
+  display: none;
+}
 .dashboard-wrapper .con{
   /* background-color: #111180; */
   width: 90%;
@@ -95,7 +103,7 @@
   /* height: fit-content; */
 } 
 .dashboard-wrapper .con aside{
-  width: 20%;
+  width: 22%;
   background-color: #fff;
   height: 100%;
   border-radius: 10px;
@@ -156,7 +164,7 @@
 
 .dashboard-wrapper .con section .tribute-box{
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   width: 70%;
 }
 .dashboard-wrapper .con section .tribute-box p{
@@ -175,11 +183,63 @@
 .btns .btn.delete{
   background-color: #C60505;
 }
+i.fa{
+  margin-right: 5px;
+}
+.dashboard-wrapper .con aside.show{
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  z-index: 99;
+  position: absolute;
+  left: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.dashboard-wrapper .con aside.close{
+  display: none;
+}
+
 @media screen and (max-width: 384px) {
   .login-box form .login-head h1{
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 1123px) {
-  
+  .dashboard-wrapper .con aside .tri-up a,
+  .dashboard-wrapper .con aside .log-out a{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 841px) {
+  .dashboard-wrapper .con aside{
+    display: none;
+    width: 0%;
+  }
+  .dashboard-wrapper .humburger .fa{
+    display: block;
+  }
+  .dashboard-wrapper .con section{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 541px) {
+  .dashboard-wrapper .con section .tribute-box{
+    width: 100%;
+  }
+  .btns .btn{
+    margin-left: 0.3rem;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+  .btns{
+  margin-top: 20px;
+  }
+  .dashboard-wrapper .con aside.show{
+    width: 70%;
+  }
+  .dashboard-wrapper .con{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
 }
