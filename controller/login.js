@@ -12,12 +12,12 @@ function adLogin(req, res, next){
     req.login(newUser, (err)=>{
       if(err){
         console.log("There is an error in login");
-        res.status(500).send("There is an error in login");
+        res.render("login", {err: "Invalid username or password"})
         
       }else{
         passport.authenticate("local")(req, res, function(){
           // res.redirect("/home");
-          res.status(200).json("Login Successful");
+          res.redirect("/ticket/pending");
 
         })
       }

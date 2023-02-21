@@ -1,5 +1,5 @@
 const {Router} = require('../utils/packages');
-const isAdmin = require("../auth/auth")
+const { isAuthorized: isAdmin } = require("../auth/auth")
 const {
   addAdmin,
   addTribute,
@@ -20,10 +20,14 @@ Router.post("/ticket/approve", approveTribute);
 Router.post("/ticket/delete", deleteTribute);
 Router.post("/logout", logout);
 Router.get("/login", (req, res) =>{
-  // res.render("login");
-  res.status(200).json("Login Page")
+  res.render("login", {err: ""});
 });
-Router.get("/ticket/pending", )
+Router.get("/ticket/pending", isAdmin, (req, res) =>{
+  res.render("adminPendingDashboard")
+})
+Router.get("/ticket/approved", isAdmin, (req, res) =>{
+  res.render("adminApproveDashboard");
+})
 
 
 

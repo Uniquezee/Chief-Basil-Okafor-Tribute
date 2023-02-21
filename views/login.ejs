@@ -10,14 +10,15 @@
 <body>
   <div class="login-wrapper">
     <div class="login-box">
-        <form action="#" method="post">
+        <form action="/admin/login" method="post">
           <div class="login-head">
             <h1>Welcome Admin</h1>
           <h1>Login</h1>
           </div>
           <div class="input-box">
-            <input type="email" placeholder="Email" class="form-con">
-          <input type="password" placeholder="Password" class="form-con">
+            <h3 style="color: red"><%= err%></h3>
+            <input type="email" placeholder="Email" class="form-con" name="username">
+          <input type="password" placeholder="Password" class="form-con" name="password">
           </div>
           <button type="submit" class="btn">Login</button>
         </form>
