@@ -78,8 +78,108 @@
 .login-box form  .input-box .form-con:focus{
   outline: 2px solid #111180;
 }
+.dashboard-wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  place-items: center start;
+}
+.dashboard-wrapper .con{
+  /* background-color: #111180; */
+  width: 90%;
+  height: 80vh;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* height: fit-content; */
+} 
+.dashboard-wrapper .con aside{
+  width: 20%;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dashboard-wrapper .con aside .tri-up,
+.dashboard-wrapper .con aside .log-out{
+  /* background-color: #111180; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-wrapper .con aside .tri-up a{
+  background-color: #fff;
+  color: #111180;
+  border: 2px solid #111180;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 560;
+  transition: all .3s ease-in-out;
+}
+.dashboard-wrapper .con aside .tri-up a.active{
+  background-color: #111180;
+  color: #fff;
+}
+.dashboard-wrapper .con aside .tri-up a.active:hover,
+.dashboard-wrapper .con aside .log-out a:hover{
+  background-color: #fff;
+  color: #111180;
+  border: 2px solid #111180;
+}
+.dashboard-wrapper .con aside .tri-up a:hover{
+  background-color: #111180;
+  color: #fff;
+}
+.dashboard-wrapper .con aside .log-out a{
+  padding: 10px 20px;
+  background-color: #111180;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: all .3s ease-in-out;
+}
+.dashboard-wrapper .con section{
+  width: 75%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.dashboard-wrapper .con section .tribute-box{
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 70%;
+}
+.dashboard-wrapper .con section .tribute-box p{
+  text-align: justify;
+}
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btns .btn{
+  margin-left: 0.5rem;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+.btns .btn.delete{
+  background-color: #C60505;
+}
 @media screen and (max-width: 384px) {
   .login-box form .login-head h1{
     font-size: 1.4rem;
   }
+}
+@media screen and (max-width: 1123px) {
+  
 }
