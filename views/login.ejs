@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Admin | Login</title>
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-box">
+        <form action="/admin/login" method="post">
+          <div class="login-head">
+            <h1>Welcome Admin</h1>
+          <h1>Login</h1>
+          </div>
+          <div class="input-box">
+            <h3 style="color: red"><%= err%></h3>
+            <input type="email" placeholder="Email" class="form-con" name="username">
+          <input type="password" placeholder="Password" class="form-con" name="password">
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
