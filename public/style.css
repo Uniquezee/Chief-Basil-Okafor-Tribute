@@ -76,10 +76,15 @@
     color: brown;
 }
 .name2{
-    font-size: 4em;
+    font-size: 3em;
     margin: 2px 2px;
     color: #0D3A54;
     left: 100px;
+    font-weight: 900;
+}
+.innerbox .name2{
+    font-size: 2em;
+    font-weight: 800;
 }
 .name4{
     width: 100%;
@@ -89,4 +94,14 @@
     line-height: 2;
     top: 10px;
     left: 15px;
+}
+.section2{
+    width: 100%;
+    background-color: cyan;
+}
+.section2 .tribute{
+    background-color: darkblue;
+    width: 60%;
+    margin: 5px auto;
+    padding: 15px;
 }
