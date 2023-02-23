@@ -4,22 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chief Basil</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <!-- <p>Hello World!</p> -->
-    <div class="wrapper">
+    <div class="main">
         <div class="section">
-            <div class="container1">
-                <p>Home</p>
-                <img src="./img/chief-bg.jpg" alt="Chief Basil"  width="100%"">
-            </div>
+            <div class="bg"></div>
             <div class="container2">
                 <div class="row1">
-                    <div class="imgclass"><img src="./img/chief-pic.png" alt="Chief pic" width="20%"></div>
+                    <div class="imgclass"><img src="./img/chief-pic.png" alt="Chief pic" width="100%"></div>
                     <div class="boxclass">
-                        <h3>Chief Basil Okafor</h3>
-                        <h1>Umeozulu</h1>
-                        <p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione iste nam obcaecati rem ipsa corrupti, ipsam, quis eaque rerum saepe eos magni repellat ullam hic atque cum illum. Sapiente, tenetur!</p>
+                        <div class="innerbox">
+                            <h3 class="name">Chief Basil Okafor</h3>
+                            <h1 class="name2">Umeozulu</h1>
+                             <p class="name3">(AKUYIE NWATA EGWU)</p>
+                             <p class="name4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione iste nam obcaecati rem ipsa corrupti, ipsam, quis eaque rerum saepe eos magni repellat ullam hic atque cum illum. Sapiente, tenetur!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +65,8 @@
             <form action="/">
                 <input type="text" name="Name" class="form-control top" placeholder="Input your name" required autofocus>
                 <input type="text" name="Title" class="form-control top" placeholder="Input Title" required autofocus>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Input your Tribute"></textarea>
+                <input type="button" value="Submit">
             </form>
         </div>
     </div>
