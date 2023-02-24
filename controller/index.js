@@ -5,6 +5,9 @@ const login = require("./login");
 const logout = require("./logout");
 const approveTribute = require("./approveTribute");
 const deleteTribute = require("./deleteTribute");
+const fetchPendingTicket = require("./pendingTicket");
+const fetchApprovedTicket = require("./fetchApprovedTicket");
+
 
 
 
@@ -17,4 +20,6 @@ module.exports = {
   approveTribute,
   deleteTribute,
   logout,
+  fetchPendingTicket,
+  fetchApprovedTicket,
 }

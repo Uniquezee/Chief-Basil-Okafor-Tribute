@@ -6,7 +6,7 @@ const {passportConfig} = require("./passport");
 
 function middleware(app){
   app.use(express.urlencoded({extended: true}));
-  app.use(express.static("public"));
+  app.use("/public",express.static("public"));
   app.set('view engine', 'ejs');
 
 

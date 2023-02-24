@@ -8,6 +8,8 @@ const {
   approveTribute,
   deleteTribute,
   logout,
+  fetchPendingTicket,
+  fetchApprovedTicket
 } = require("../controller")
 
 
@@ -22,12 +24,8 @@ Router.post("/logout", logout);
 Router.get("/login", (req, res) =>{
   res.render("login", {err: ""});
 });
-Router.get("/ticket/pending", isAdmin, (req, res) =>{
-  res.render("adminPendingDashboard")
-})
-Router.get("/ticket/approved", isAdmin, (req, res) =>{
-  res.render("adminApproveDashboard");
-})
+Router.get("/ticket/pending", isAdmin, fetchPendingTicket)
+Router.get("/ticket/approved", isAdmin, fetchApprovedTicket)
 
 
 
