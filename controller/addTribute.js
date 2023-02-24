@@ -1,8 +1,8 @@
 const {tribute} = require("../model/tributeModel");
 
 const addTribute = (req, res, next) => {
-  const username = req.body.username;
-  const tributeTitle = req.body.tributeTitle;
+  const username = req.body.name;
+  const tributeTitle = req.body.title;
   const tributes = req.body.tribute;
 
   const newTribute = new tribute({
@@ -13,7 +13,7 @@ const addTribute = (req, res, next) => {
   })
   newTribute.save( async (err, result)=>{
     try{
-      res.status(200).json(result);
+      res.render("success");
     }catch(err){
     }
   });

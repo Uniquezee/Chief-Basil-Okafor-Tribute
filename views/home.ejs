@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chief Basil</title>
+    <link href="/public/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <p>Hello World!</p> -->
+    <div class="main">
+        <div class="section">
+            <div class="bg"></div>
+            <div class="container2">
+                <div class="row">
+                  <div class="row1">
+                    <div class="imgclass"><img src="/public/img/chief-pic.png" alt="Chief pic" width="100%"></div>
+                    <div class="boxclass">
+                        <div class="innerbox">
+                            <h3 class="name">Chief Basil Okafor</h3>
+                            <h1 class="name2">Umeozulu</h1>
+                            <p class="name3">(AKUYIE NWATA EGWU)</p>
+                            <p class="name4">Chief Basil Okafor Umeozulu was born on February 2, 1930, to the family of Benedict and Mary
+                              Umeozulu in Amuwo Village of Amesi in Aguata Local Government Area of Anambra State. He was the
+                              fourth child of four children. He commenced his education from kindergarten in 1936 at St. Vincent
+                              Catholic Church School under and around the cashew tree. His education continued till 1947, with a
+                              graduation certificate to his credit. Akuyie had a burning desire to further his education. However, this
+                              could not be achieved due to circumstances beyond his control.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="row">
+              <div class="tribute">
+                <h1 class="tr">TRIBUTE</h1>
+                <hr>
+                <marquee direction="down" scrollamount="20" scrolldelay="500" class="rows" height="1000px">
+                  <% tributes.forEach(tribute => {%>
+                    <div class="tribs">
+                      <h4><%= tribute.tributeTitle%></h4>
+                      <p><%= tribute.tribute%></p>
+                      <span><%= tribute.username%></span>
+                  </div>
+                   
+                    <% }) %>
+
+                    
+                </marquee>
+                <hr>
+                <div class="close">
+                    <h1>REMEMBERING</h1>
+                    <h1>CHIEF BASIL</h1>
+                    <h2>1930-2022</h2>
+                    <h4>Chief Basil touched all of our lives in so many ways.</h4>
+                    <h4>Thank you for sharing your thoughts and remembrances.</h4> 
+                    
+                </div>
+            
+            </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="row">
+              <div class="footer-con">
+                <h1>Submit a Tribute</h1>
+            <form action="/create/tribute" method="post">
+                <input type="text" name="name" class="form-control top" placeholder="Input your name" required
+                    >
+                <input type="text" name="title" class="form-control top" placeholder="Input Title" required>
+                <textarea name="tribute" id="" cols="30" rows="10" class="text-area" placeholder="Input your Tribute"></textarea>
+                <input type="submit" value="Submit" class="btn-sub">
+            </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

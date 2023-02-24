@@ -89,7 +89,12 @@
   width: 90%;
   padding: 0 2rem;
 }
-.dashboard-wrapper .humburger .fa{
+/* .dashboard-wrapper .humburger .fa{
+  font-size: 1.8rem;
+  display: none;
+} */
+.dashboard-wrapper .humburger .fa-bars,
+.dashboard-wrapper .humburger .fa-times{
   font-size: 1.8rem;
   display: none;
 }
@@ -136,7 +141,7 @@
   color: #fff;
 }
 .dashboard-wrapper .con aside .tri-up a.active:hover,
-.dashboard-wrapper .con aside .log-out a:hover{
+.dashboard-wrapper .con aside .log-out button:hover{
   background-color: #fff;
   color: #111180;
   border: 2px solid #111180;
@@ -145,13 +150,16 @@
   background-color: #111180;
   color: #fff;
 }
-.dashboard-wrapper .con aside .log-out a{
+.dashboard-wrapper .con aside .log-out button{
   padding: 10px 20px;
   background-color: #111180;
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
   font-size: 1.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
   transition: all .3s ease-in-out;
 }
 .dashboard-wrapper .con section{
@@ -206,7 +214,7 @@ i.fa{
 }
 @media screen and (max-width: 1123px) {
   .dashboard-wrapper .con aside .tri-up a,
-  .dashboard-wrapper .con aside .log-out a{
+  .dashboard-wrapper .con aside .log-out button{
     font-size: 0.8rem;
   }
 }
@@ -215,7 +223,7 @@ i.fa{
     display: none;
     width: 0%;
   }
-  .dashboard-wrapper .humburger .fa{
+  .dashboard-wrapper .humburger .fa-bars{
     display: block;
   }
   .dashboard-wrapper .con section{
